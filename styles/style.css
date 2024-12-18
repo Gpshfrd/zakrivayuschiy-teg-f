@@ -1,8 +1,6 @@
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
@@ -10,11 +8,28 @@
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
 */
 
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font);
+  font-variation-settings: 'wght' var(--text-weight, 400);
+  background-image: var(--page-bg-image);
+  background-attachment: fixed;
+  padding-block-start: 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  max-inline-size: 700px;
+  background-color: var(--page-bg-color);
+  font-family: var(--accent-font);
+  text-align: center;
+  margin-inline: auto;
+}
+
+.header__title {
+  font-size: clamp(21.438rem, 18.973rem + 10.516vw, 28.438rem);
 }
