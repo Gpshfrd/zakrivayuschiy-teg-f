@@ -219,7 +219,7 @@
 .save-button__icon {
   inline-size: 21px;
   block-size: 21px;
-  color: var(--button-text-color);
+  filter: invert(1);
 }
 
 .button__text, .save-button__icon {
