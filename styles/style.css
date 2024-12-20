@@ -13,7 +13,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font);
-  font-variation-settings: 'wght' var(--text-weight, 400);
+  font-variation-settings: "wght" var(--text-weight, 400);
   background-image: var(--page-bg-image);
   background-size: cover;
   background-attachment: fixed;
@@ -73,7 +73,7 @@
 }
 
 .card__title {
-  font-variation-settings: 'wght' var(--card-title-weight);
+  font-variation-settings: "wght" var(--card-title-weight);
   font-size: 18px;
   padding: 5px 10px;
 }
@@ -91,8 +91,8 @@
   font-family: var(--accent-font);
   font-size: 14px;
   color: var(--accent-color);
-  text-shadow: 
-    1px 1px 0 var(--stroke-color), 
+  text-shadow:
+    1px 1px 0 var(--stroke-color),
     -1px -1px 0 var(--stroke-color),
     1px -1px 0 var(--stroke-color),
     -1px 1px 0 var(--stroke-color);
@@ -100,7 +100,7 @@
   top: 28px;
 }
 
-@supports(-webkit-text-stroke: 0.25px var(--stroke-color)) {
+@supports (-webkit-text-stroke: 0.25px var(--stroke-color)) {
   .card__image-label {
     -webkit-text-stroke: 0.25px var(--stroke-color);
   }
@@ -222,7 +222,8 @@
   filter: invert(1);
 }
 
-.button__text, .save-button__icon {
+.button__text,
+.save-button__icon {
   mix-blend-mode: difference;
 }
 
