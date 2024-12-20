@@ -134,6 +134,10 @@
   z-index: 1;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accent-color);
   outline: none;
@@ -158,13 +162,12 @@
   display: flex;
   margin: 25px;
   justify-content: right;
-  gap: 12px;
+  gap: 6px;
 }
 
 .like-icon {
   inline-size: 39px;
   block-size: 38px;
-  cursor: pointer;
 }
 
 .card__like-button {
@@ -176,10 +179,19 @@
   inline-size: 39px;
   block-size: 38px;
   border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+.card__icon-button:focus {
+  outline: none;
 }
 
 .card__icon-button:focus-visible {
-  outline: none;
+  outline: 2px solid var(--accent-color);
+  outline-offset: -2px  ;
+  transition: border-color 0.3s ease;
 }
 
 .button__text {
