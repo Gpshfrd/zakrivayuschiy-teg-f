@@ -100,6 +100,12 @@
   top: 28px;
 }
 
+@supports(-webkit-text-stroke: 0.25px var(--stroke-color)) {
+  .card__image-label {
+    -webkit-text-stroke: 0.25px var(--stroke-color);
+  }
+}
+
 @media (width < 376px) {
   .card__image-label {
     top: 25px;
