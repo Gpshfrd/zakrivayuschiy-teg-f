@@ -312,12 +312,9 @@
   filter: hue-rotate(0.25turn);
 }
 
-.filter-opacity {
+.filter-gray-opacity {
+  filter: grayscale(1);
   filter: opacity(0.75);
-}
-
-.filter-invert {
-  filter: invert(1);
 }
 
 .filter-gray {
