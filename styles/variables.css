@@ -4,8 +4,12 @@
   --accent-font: 'PressStart2P', serif;
   --card-text-weight: 400;
   --card-title-weight: 700;
-  --page-bg-image: repeating-linear-gradient(to left, #e7e7e7 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, #e7e7e7 0 2px, transparent 2px 4px),
-    linear-gradient(0, #1a1a1a, #fff);
-  --page-bg-color: #fff;
+  --page-bg-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(0, #1a1a1a 0.01%, #e7e7e7);
+  --page-bg-color: #e7e7e7;
+  --accent-color: #000;
+  --button-text-color: #fff;
+  --header-padding: 128px;
+  --stroke-color: #e7e7e7;
 }
