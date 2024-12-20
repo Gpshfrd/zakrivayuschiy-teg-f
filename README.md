@@ -1,1 +1,1 @@
-Ссылка на Pages: https://gpshfrd.github.io/zakrivayuschiy-teg-f/
+Ссылка на Pages: https://gpshfrd.github.io/zakrivayuschiy-teg-f
