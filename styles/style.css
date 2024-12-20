@@ -313,8 +313,7 @@
 }
 
 .filter-gray-opacity {
-  filter: grayscale(1);
-  filter: opacity(0.75);
+  filter: grayscale(1) opacity(0.75);
 }
 
 .filter-gray {
