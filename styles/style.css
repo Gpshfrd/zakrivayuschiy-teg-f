@@ -285,3 +285,35 @@
 .footer {
   padding-block-end: 103px;
 }
+
+.filter-saturation {
+  filter: saturate(3);
+}
+
+.filter-sepia {
+  filter: sepia(2);
+}
+
+.filter-brightness {
+  filter: brightness(3);
+}
+
+.filter-contrast {
+  filter: contrast(1.25);
+}
+
+.filter-hue {
+  filter: hue-rotate(0.25turn);
+}
+
+.filter-opacity {
+  filter: opacity(0.75);
+}
+
+.filter-invert {
+  filter: invert(1);
+}
+
+.filter-gray {
+  filter: grayscale(1);
+}
