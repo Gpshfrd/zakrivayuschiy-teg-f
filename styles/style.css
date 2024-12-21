@@ -13,7 +13,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font);
-  font-variation-settings: "wght" var(--text-weight, 400);
+  font-variation-settings: "wght" var(--card-text-weight);
   background-image: var(--page-bg-image);
   background-size: cover;
   background-attachment: fixed;
@@ -100,9 +100,12 @@
   top: 28px;
 }
 
-@supports (-webkit-text-stroke: 0.25px var(--stroke-color)) {
+@supports (-webkit-text-stroke: 1px var(--stroke-color)) or (text-stroke: 1px var(--stroke-color)) {
   .card__image-label {
-    -webkit-text-stroke: 0.25px var(--stroke-color);
+    -webkit-text-stroke: 1px var(--stroke-color);
+    text-stroke: 1px var(--stroke-color);
+    paint-order: stroke fill;
+    text-shadow: none;
   }
 }
 
