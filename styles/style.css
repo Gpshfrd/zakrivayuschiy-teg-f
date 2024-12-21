@@ -85,6 +85,8 @@
 
 .card__image-wrapper {
   position: relative;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .card__image-label {
