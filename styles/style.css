@@ -20,6 +20,11 @@
   padding-block-start: 100px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -96,8 +101,8 @@
     -1px -1px 0 var(--stroke-color),
     1px -1px 0 var(--stroke-color),
     -1px 1px 0 var(--stroke-color);
-  right: 26px;
-  top: 28px;
+  right: 25px;
+  top: 25px;
 }
 
 @supports (-webkit-text-stroke: 1px var(--stroke-color)) or (text-stroke: 1px var(--stroke-color)) {
@@ -214,9 +219,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-self: center;
   gap: 8px;
   padding: 15px 20px;
+  margin-inline: auto;
 }
 
 .save-button__icon {
@@ -251,6 +256,7 @@
   text-transform: uppercase;
   background-color: var(--page-bg-color);
   max-inline-size: 355px;
+  inline-size: clamp(21.313rem, 21.0489rem + 1.1268vw, 22.063rem);
   display: none;
 }
 
