@@ -107,7 +107,8 @@
   top: 25px;
 }
 
-@supports (-webkit-text-stroke: 1px var(--stroke-color)) or (text-stroke: 1px var(--stroke-color)) {
+@supports (-webkit-text-stroke: 1px var(--stroke-color)) or
+  (text-stroke: 1px var(--stroke-color)) {
   .card__image-label {
     -webkit-text-stroke: 1px var(--stroke-color);
     text-stroke: 1px var(--stroke-color);
@@ -127,7 +128,7 @@
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
-  border-block-end: 2px solid var(--accent-color);
+  border-block: 2px solid var(--accent-color);
 }
 
 .card__content {
@@ -199,6 +200,8 @@
   padding: 0;
   cursor: pointer;
   display: flex;
+  outline: 2px solid var(--page-bg-color);
+  outline-offset: -2px;
 }
 
 .card__icon-button:focus {
@@ -207,8 +210,7 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
-  outline-offset: -2px;
-  transition: border-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .button__text {
@@ -288,10 +290,19 @@
 .dialog__button {
   background-color: var(--page-bg-color);
   color: var(--accent-color);
-  padding: 12.5px;
+  padding: 9.5px 17px;
   cursor: pointer;
   inline-size: 100%;
   text-transform: uppercase;
+}
+
+@media (width <= 376px) {
+  .dialog {
+    padding-inline: 40px;
+  }
+  .dialog__content {
+    gap: 20px;
+  }
 }
 
 .dialog__button-icon {
