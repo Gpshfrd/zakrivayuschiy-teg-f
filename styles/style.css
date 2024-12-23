@@ -150,6 +150,7 @@
   border: 2px solid var(--accent-color);
   overflow: hidden;
   z-index: 1;
+  color: var(--page-bg-color);
 }
 
 .button:focus {
