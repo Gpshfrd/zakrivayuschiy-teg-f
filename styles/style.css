@@ -191,10 +191,11 @@
 
 .card__like-button {
   inline-size: 130px;
+  background-color: var(--page-bg-color);
 }
 
 .card__icon-button {
-  background: transparent;
+  background-color: var(--page-bg-color);
   inline-size: 39px;
   block-size: 38px;
   border: none;
